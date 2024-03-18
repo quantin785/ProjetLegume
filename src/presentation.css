@@ -1,0 +1,23 @@
+.presentation{
+
+    text-align: center;
+
+}
+
+.title{
+    font-family: "Newsreader";
+    font-style: italic;
+    margin-top: 80px;
+}
+
+.Browse {
+    font-family: "Inter";
+    font-size: 14px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 25px;
+    background-color: #426b1f;
+    color: white;
+    font-family: "Inter", sans-serif;
+}

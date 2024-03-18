@@ -1,0 +1,149 @@
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem ;
+
+
+}
+
+.logo{
+    color: #426B1F;
+    font-family: "Newsreader", Serif;
+    font-size: 28px;
+    text-shadow: 0 0 2px black;
+    
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    
+}
+
+li {
+
+    padding: 20px;
+    list-style: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+li a {
+    cursor: pointer;
+}
+
+.basket {
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: #426b1f;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.btn-nav{
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #2e4219;
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1024px){
+
+    .nav{
+        border-bottom: solid 0.1px #000000;
+    }
+
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        background-color: #ffffff;
+        transition: 0.4s;
+        transform: translateY(-100vh);
+
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 2rem;
+        transition: 0.2s ease;
+    }
+
+    li {
+        font-family: Arial;
+        color: #5c8541;
+        transition:  0.2s ease;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 1rem;
+
+
+
+    }
+
+    li:hover {
+        color: gray;
+
+    }
+
+    .basket{
+        background-color: #5c8541;
+        border-radius: 30px;
+        padding: 10px 75px;
+        font-size: 1.2rem;
+        transition: 0.2s all ease ;
+        cursor: pointer;
+        border: solid 0.5px transparent;
+        font-family: "Newsreader";
+    }
+
+    .basket:hover{
+        border: solid 0.5px white;
+        transform: scale(105%);
+    }
+
+    .btn-nav{
+        display: block;
+    }
+
+    .responsive_nav{
+        transform: none;
+    }
+
+    .close{
+        position: absolute;
+        top: 1rem;
+        right: 1.74rem;
+        padding: 10px;
+        font-size: 1.7rem;
+        cursor: pointer;
+        background: transparent;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        color: #000000;
+        transition: 0.8s ease ;
+        display: block;
+    }
+}
