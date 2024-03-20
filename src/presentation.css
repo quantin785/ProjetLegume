@@ -1,6 +1,12 @@
 .presentation{
 
+
+    position: relative; /* Assurez-vous que la position est relative pour permettre un positionnement absolu à l'intérieur */
+
+
+
     text-align: center;
+    z-index: 1;
 
 }
 
@@ -20,4 +26,29 @@
     background-color: #426b1f;
     color: white;
     font-family: "Inter", sans-serif;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.Browse:hover{
+    border: solid 0.5px #2e4219;
+    transform: scale(102%);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+
+@media only screen and (max-width: 1024px){
+    .presentation{
+        height: auto;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 540px){
+    .title{
+        font-size: 25px;
+    }
 }

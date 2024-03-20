@@ -1,8 +1,9 @@
 import './navbar.css'
 import { RxHamburgerMenu } from "react-icons/rx";
 import React from "react";
-import { IoClose } from "react-icons/io5";
+import { TfiClose } from "react-icons/tfi";
 import {useRef} from "react";
+import { SlBasket } from "react-icons/sl";
 
 
 
@@ -27,10 +28,10 @@ function Navbar (){
                     <li><a>Who we are</a></li>
                     <li><a>My profile</a></li>
                     <li>
-                        <button className="basket">Basket</button>
+                        <button className="basket"><SlBasket /> Basket</button>
                     </li>
 
-                    <button className="close" onClick={showNavmenu}><IoClose /></button>
+                    <button className="close" onClick={showNavmenu}><TfiClose /></button>
 
 
                 </ul>
