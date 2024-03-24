@@ -1,0 +1,32 @@
+.produit-container{
+    position: relative;
+}
+
+.produit{
+    font-family: "Inter", sans-serif;
+}
+
+
+
+.addbasket{
+    margin: 0 10px;
+
+
+    font-size: 10px;
+    height: 20px;
+    width: 200px;
+    border-radius: 10px;
+    border: solid 0.5px #FAFAF5;
+    color: white;
+    background-color: #5C8541FF;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.addbasket:hover{
+    color: #5c8541;
+    background-color: #FAFAF5;
+    border: solid 0.5px #5C8541FF;
+}
+

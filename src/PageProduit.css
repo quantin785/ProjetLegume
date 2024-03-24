@@ -1,0 +1,26 @@
+.Page-Produit {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+
+}
+
+.produits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem ;
+    margin-top: 30px;
+    gap: 30px;
+    display: flex; /* Centrer les produits horizontalement */
+    flex-wrap: wrap;
+    justify-content: center;
+
+    top: 90px;
+
+
+}
+
+
+

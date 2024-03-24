@@ -17,19 +17,25 @@ function Navbar (){
         navRef.current.classList.toggle("responsive_nav")
     }
 
+    const handleShopClick = () => {
+        // Ajoutez le code ici pour gérer le clic sur le lien "Shop"
+        // Par exemple, vous pouvez naviguer vers la page de magasin ou effectuer d'autres actions.
+        console.log("Shop clicked");
+    }
+
     return (
 
         <div className="nav" >
             <h1 className="logo">World Peas</h1>
             <nav ref={navRef}>
                 <ul>
-                    <li><a>Shop</a></li>
-                    <li><a>Newstand</a></li>
-                    <li><a>Who we are</a></li>
-                    <li><a>My profile</a></li>
-                    <li>
+                    <li className="li-nav"><a onClick={handleShopClick}>Shop</a></li>
+                    <li className="li-nav"><a>Newstand</a></li>
+                    <li className="li-nav"><a>Who we are</a></li>
+                    <li className="li-nav"><a>My profile</a></li>
+                    <li className="li-nav">
                         <button className="basket"><SlBasket /> Basket</button>
-                    </li>
+                    </li >
 
                     <button className="close" onClick={showNavmenu}><TfiClose /></button>
 

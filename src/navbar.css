@@ -24,7 +24,7 @@ ul {
     
 }
 
-li {
+.li-nav {
 
     padding: 20px;
     list-style: none;
@@ -32,7 +32,7 @@ li {
     font-family: "Inter", sans-serif;
 }
 
-li a {
+.li-nav a {
     cursor: pointer;
 }
 
@@ -101,7 +101,7 @@ li a {
         transition: 0.2s ease;
     }
 
-    li {
+    .li-nav {
         font-family: Arial;
         color: #5c8541;
         transition:  0.2s ease;
@@ -114,7 +114,7 @@ li a {
 
     }
 
-    li:hover {
+    .li-nav:hover {
         color: gray;
 
 
