@@ -31,13 +31,15 @@ function App() {
     return (
 
         <div className="App">
-            <Navbar  />
+            <Navbar/>
+            <div className="presentation1">
+                <button className="scrollToBottom" onClick={handleScroll}><IoIosArrowDown/></button>
+                <Presentation/>
+            </div>
 
-
-            <PageProduit />
-
-
-
+            <div ref={imagePresentationRef}>
+                <ImagePresentation/>
+            </div>
         </div>
 
     );
